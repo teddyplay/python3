@@ -1,0 +1,25 @@
+
+class Person():
+    def __init__(self , first_name , last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+class Jack(Person):
+    def __init__(self, first_name, last_name , phone_number , balance ):
+        super().__init__(first_name, last_name)
+        self.phone_number = phone_number
+        self.balance = balance
+
+names = Jack("michael", "jackson" , "0555648952" , "1300")
+ 
+class Vito(Jack):
+    _n_number = 22
+    def __init__(self, first_name, last_name, phone_number, balance):
+        super().__init__(first_name, last_name, phone_number, balance)
+    def minus(self):
+        a = human.balance - self._n_number
+        m = self.balance + a
+        print(m)
+g=Vito('vito' , 'melly' , '0222564975' , '5000')
+
+Vito.minus(g)
