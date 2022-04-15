@@ -60,10 +60,19 @@
 #dict = { 'банан': 'желтый' , 'яблоко': 'красное' , 'маракуйя' : 'оранжевая'}
 #dict ['яблоко'] = 'зелёное'
 #print(dict)
+
+
+
+
+
 x = int(input('first number'))
 y = int(input('two number'))
 def multiply(a, b):
     return a * b
 print(multiply(x , y))
+
+
+
+
 
     
