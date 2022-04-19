@@ -245,9 +245,341 @@
 #print(p)
 
 
-if __name__ == "__main__":
-    print ('эта программа запущена самам по себе')
-else :
-    print('нет его запустили насилльно')
+#if __name__ == "__main__":
+#    print ('эта программа запущена самам по себе')
+#else :
+#    print('нет его запустили насилльно')
 
 
+
+
+#shop = ['яблоки ' , 'банан ' , 'апельсины' , 'клубника' , 'малина ']
+#jack = 'я посчитал все фрукты которые мне нужно было купить и их  ' , len(shop) , 'штук'
+#print ( jack , end = '')
+#
+#for item in shop:
+##  print(  item , end = '' )
+#
+#print( ' \n так же нужно купить риса ')
+#shop.append('рис')
+#print('теперь мой список выглядит так : ' , shop )
+#
+#print('отсорирую ка я свой список , ')
+#shop.sort()
+#print ('теперь мой отсартированный список выглядит так : ' , shop )
+
+#print('для начала мне нужно купить : ' , shop[0])
+#print('апельсины я купил , теперь мне нужно убрать их из списка ')
+#olditem = shop
+#del shop[0]
+#print('мой список покупок теперь выглядит так ;' , shop )
+
+
+#while True:
+#  produkts = [ 'яблоки' , ' бананы ' , 'апельсины' , ' конфеты' , 'жвачки']
+#  print('привет , меня зовут Аблай и я продавец товаров  \n вот писок товаров котрорые сейчас есть у меня :' , produkts)
+#  a = input ('желаете что нибудь приобрести из вышеперечисленного ? если ничего не желаете то напечатайте , exit: ')
+#  if a == exit:
+#    print('тогда хорошего вам дня !')
+#    break
+#  if 
+
+
+
+
+#zoo = 'пингвин' , ' лошадь' , ' змея ' 
+#print('количество всех животных  :' , len(zoo))
+#
+#new_zoo = 'ястреб ' , ' лев' , 'тигр' , zoo
+#print ('количество  клеток в новом зоопарке :' , len(new_zoo))
+#print('все животные ы новом зоопарке : ' , (new_zoo))
+#print('животные привезенные из сатрого зоопарка  :' , new_zoo[3])
+#print('последнее животное привезенное из старого зоопарка :' , new_zoo[3][2])
+#print( 'в общем и целом всех животных теперь :' , len(new_zoo)-1 + len(zoo))
+
+
+
+
+#ab = { 'Swaroop' : 'swaroop@swaroopch.com',
+#      'Larry' : 'larry@wall.org',
+##      'Matsumoto' : 'matz@ruby-lang.org',
+#      'Spammer' : 'spammer@hotmail.com' }
+#print("Адрес Swaroop'а:", ab['Swaroop'])
+#del ab['Spammer']
+#print('\nВ адресной книге {0} контакта\n'.format(len(ab)))
+#for name, address in ab.items():
+#  print('Контакт {0} с адресом {1}'.format(name, address))
+# Добавление пары ключ-значение
+#ab['Guido'] = 'guido@python.org'
+#if 'Guido' in ab:
+#  print("\nАдрес Guido:", ab['Guido'])
+
+
+
+
+#while True:
+#  ask = input('Введите действие операции  : + , - , * , / . \nДля выхода нажмите q : ')
+#
+#  if ask ==  'q':
+#    print ('программа завершена ')
+ #   break
+#
+ # a = int(input('введите первое значение:'))
+#  b = int(input('введите второе значение : '))
+#
+##  if a + b:
+ #   c = a + b 
+#    print('результат вычисления данной операции : ' , str( c))
+#
+ # if a - b :
+#   print('результат вычисления даннной операции : ' , int(a - b))
+ #   print(c = a - b)
+#
+ # if a * b:
+##    print ('результат вычисления жанной операции : ' ,int( a * b ))
+ #   print(c = a * b)
+#
+ # if a / b:
+ ##   print('Бро ,  скажу сразу  , что на 0 делить нельзя )')
+ #   print ('резултат вычисления данной операции :' ,int( a / b ))
+ #   print(c = a / b)
+#
+ # else:
+ #   print('Такой операции нет зедс чувак , но или её ещё не добавили в меня)))')
+
+#product = ('apple' , 'banan' , 'potato' , 'cherry')
+#print('i have:' , list('apple'))
+#print( 'так же у меня есть :' , product)
+
+
+#class Song (object):
+##  def __init__(self , lyrics):
+#    self.lyrics = lyrics
+#
+#  def sing_me_a_song(self):
+#    for line in self.lyrics:
+#      print(line)
+#
+#happy_birdhday = Song([
+#  'с днем рождения тебя я хочу у поздравить' ,
+#  'и пожелать тебе счастья'])
+#
+#bulls_on_parad = Song ([
+#  'кто же сегодня потерял корову ?',
+# 'а это он потерял оказывается '])
+#
+#happy_birdhday.sing_me_a_song()
+#bulls_on_parad.sing_me_a_song()
+
+
+
+
+
+
+
+
+#class Point :
+#  color = 'red'
+#  number = 2
+
+
+ # def set_cords (self , x , y):
+ #   self.x = x
+#    self.y = y 
+
+ # def get_corts(self):
+ #   return(self.x , self.y)
+
+#pt = Point()
+#pt.set_cords( 1 , 2 )
+#print(pt.get_corts())
+
+
+
+#class Point:
+##  def __init__(self, a , b):
+#    self.q = a
+#    self.z = b
+#
+#pt = Point( 5 , 6)
+#print(pt.__dict__)
+
+
+
+#class Car:
+#
+#  name = 'c200'
+#  make = 'mercedec'
+#  model = 2018
+#
+ # def start(self):
+ #   print('заводим двигатель')
+##
+#  def stop(self):
+#    print('выключаем двигатель')
+#
+#car_a = Car()
+#car_b = Car()
+#
+#car_b.start()
+#print(car_b.make)
+#print(dir(car_b))
+
+
+
+#class Car:
+#
+#  car_count = 0
+#
+#  def start(self , name , model , age ):
+#    print('двигаетль запущен ')
+#    self.name = name 
+##    self.model= model
+#    self.age = age
+#    Car.car_count += 1 
+#
+#car_a = Car()
+#car_a.start('Rang rover', 'sport' , 2022)
+#print(car_a.age)
+#print(car_a.car_count)
+
+
+
+#class Square:
+#  @staticmethod
+#  def get_square( a , b ):
+#    return (a*a , b*b)
+#
+#print(Square.get_square(2 , 3))
+
+
+
+#class Car:
+#  def start(self):
+#3    print('двигатеь запущен ')
+#
+###car_a = Car
+#print(car_a.start)
+
+
+
+
+#class Car:
+#  car_coun = 0
+#  def __init__(self):
+#    Car.car_coun += 1
+#    print(Car.car_coun)
+##
+#car_a = Car()
+#car_b = Car()
+#car_c = Car()
+
+
+
+
+
+#class Car:
+#  def __init__(self):
+#    print('двигатель запущен ')
+#    self.model = 'm5'
+##    self.name = 'bmw'
+##    self.age = '2014'
+#
+#car_a = Car()
+#print(car_a.name)
+
+
+
+
+#class House:
+#  def __init__(self):
+#    print('дом построен на улице :')
+##   self.chapaeva_street = 'Чапаеева'
+#    self.kosmonavtov_street = 'Космонавтов'
+#    self.abai = 'Абай'
+
+#street_1 = House()
+#print(street_1.chapaeva_street)
+
+
+
+
+#class Mom():
+#  def mom_method(self):
+#    print('это родительский класс')
+#
+#class Son(Mom):
+#  def son_method(self):
+#    print('это дочерний класс')
+#
+#mother = Son()
+#mother.mom_method()
+
+
+
+
+#class Papa():
+#  def papa_method(self):
+#    print('это родителький класс')
+#
+#class Son(Papa):
+#  def son_method(self):
+#    print('это дочерний класс ')
+#
+#class Daghter(Son):
+#  def doughter_methot(self):
+#    print('это тоже дочерний класс )))')
+#
+#family = Son()
+#family.papa_method()
+#family = Son()
+#family.papa_method()
+
+
+
+#class Telephone():
+#  def phone(self):
+#    print('это родительский класс')
+#
+#class Camera():
+#  def camera(self):
+#    print('это камера , метод из родитеолького класса')
+#
+#class Microphone(Telephone , Camera ):
+##  def microphone(self):
+#    print('здесь объеденены сразу два класса')
+#
+#tech = Microphone()
+##tech.phone()
+#tech.camera()
+
+
+
+
+#class Calculate ():
+#  def start(self , a , b):
+#      print(a + b)
+#
+#math = Calculate()
+#math.start( 1 , 3)
+
+
+
+class Mother ():
+  def mother(self):
+    print(' это родителткий класс ')
+
+class Son(Mother):
+  def son (self):
+    print(' это дочерний класс , взят с класса Mother')
+
+class Doughter(Son):
+  def doughter (self):
+    print(' это тоже дочерний класс , взятый с класса Son')
+
+family = Mother()
+family.mother()
+family = Son()
+family.son()
+family = Doughter()
+family.doughter()
