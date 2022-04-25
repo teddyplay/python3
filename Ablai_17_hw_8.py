@@ -21,4 +21,4 @@ while finish != tries_user:
     finish += 1
 
 with open('data.txt', 'a') as file:
-    file.write(f'Было {tries_user} попыток, потраченное время: {datetime.datetime.now() - start}, имя: {name}')
+    file.write(f'Было {tries_user} попыток.\n Потраченное время: {datetime.datetime.now() - start}ю \nИмя: {name}')

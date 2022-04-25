@@ -565,21 +565,469 @@
 
 
 
-class Mother ():
-  def mother(self):
-    print(' это родителткий класс ')
+#class Mother ():
+#  def mother(self):
+#    print(' это родителткий класс ')
+#
+#class Son(Mother):
+#3  def son (self):
+ #   print(' это дочерний класс , взят с класса Mother')
+#
+#class Doughter(Son):
+#  def doughter (self):
+ #   print(' это тоже дочерний класс , взятый с класса Son')
 
-class Son(Mother):
-  def son (self):
-    print(' это дочерний класс , взят с класса Mother')
+#family = Mother()
+#family.mother()
+#family = Son()
+#family.son()
+#family = Doughter()
+#family.doughter()
 
-class Doughter(Son):
-  def doughter (self):
-    print(' это тоже дочерний класс , взятый с класса Son')
 
-family = Mother()
-family.mother()
-family = Son()
-family.son()
-family = Doughter()
-family.doughter()
+
+
+
+
+
+
+#class Dog:
+#  def __init__(self , name , age , type):
+#    self.name = name
+#    self.age = age
+#    self.type = type
+#
+##  def voice(self):
+#    print(f'{self.name} гав гав!')
+#
+#  def eat(self):
+#    print(f"{self.name} i'm eaten ")
+#  
+#  def sleep(self):
+#    print(f"{self.age} i be sleep ")
+#
+#  def info(self , weight , height ):
+#    print(f"""
+#    name: {self.name} 
+#    Age : {self.age} 
+#    Type: {self.type}
+#    weight: {weight}
+#    height: {height}
+#    """)
+
+
+#rex = Dog('rex', 12 , 'pitbul')
+#rex.info(45 , 1.3)
+#
+#rex = Dog('Sharic' , 5  ,'pitbul')
+#rex.voice()
+##
+#rex = Dog( 'jack'  , 12 , 'husky')
+#rex.sleep()
+
+
+#class Transport:
+#  def __init__(self , title , model , age , color):
+#    self.title = title 
+#    self.model = model  
+#    self.age = age 
+#    self.color = color
+# 
+#  def start_engine(self):
+#    print(f"{self.title} start engine!")
+#
+#car = Transport('Range_rover' , 'Sport' , 2016 , "black")
+#.start_engine()
+
+
+
+
+#class Дом ():
+#
+#  def __init__(self , фундамент , стены , крыша , окна ):
+#    self.фундамент = фундамент
+#    self.стены = стены 
+#    self.крыша = крыша 
+#    self.онка = окна
+#
+ # def plan(self):
+ #   print( f'{self.фундамент} нужен для постройки дома')
+#
+#house = Дом( 'фундмаент' , 'стены' , 'крыша' , 'окна')
+#house.plan()
+
+  
+
+
+#class Dog():
+#  def __init__(self , name , age , VoiceText):
+#    self.name = name
+#    self.age = age 
+#    self.VoiceText = VoiceText
+#
+#  def voice(self):
+#    print (f' Rax {self.VoiceText} ')
+#  
+#dog = Dog( 'rax' , 12 ,  'gav- gav')
+#dog.voice()
+#
+#
+#class Cat():
+#  def __init__(self , name , age , VoiceText):
+#    self.name = name
+#    self.age = age 
+#    self.VoiceText = VoiceText
+#
+#  def voice(self):
+#    print (f'cat {self.VoiceText} ')
+#
+##cat = Cat( 'hloe ' , 12 ,  'myu - myu ')
+#cat.voice()
+##
+#
+#
+#class Cow():
+#  def __init__(self , name , age , VoiceText):
+#    self.name = name
+#    self.age = age 
+#    self.VoiceText = VoiceText
+#
+#  def voice(self):
+#    print (f'cow {self.VoiceText} ')
+#
+#cat = Cow(  'jack' , 13 , 'muu - muu')
+#cat.voice()
+#
+#
+##class Bear():
+#  def __init__(self , name , age , VoiceText):
+#    self.name = name
+#    self.age = age 
+#    self.VoiceText = VoiceText
+#
+#  def voice(self):
+#    print (f'bear {self.VoiceText} ')
+#
+#cat = Cow(  'greta' , 21 ,  'arr - arr')
+#cat.voice()
+
+
+
+#""" HOME WORK №1"""
+#
+#class Bmw ():
+#  def __init__(self , title , model , weight , hp , nm , max_speed , color ):
+#    self.title = title 
+#    self.model = model 
+#    self.weight = weight 
+#    self.hp = hp 
+#    self.nm = nm 
+#    self.max_speed = max_speed 
+#    self.color = color
+#
+#  def start_engine(self):
+#    print (f'{self.title}  {self.model} engine started !')
+#
+#  def engine_stop(self):
+#    print (f'{self.title} {self.model} engine stopped ! ')
+#
+#  def info (self):
+#     print (f"""
+#     {self.title} title
+#     {self.model} model 
+#     {self.weight} weight
+#     {self.hp} hp 
+#     {self.nm} nm
+#     {self.max_speed} max_speed
+#     {self.color} color
+#     """)
+#
+#bmw = Bmw('Bmw' , 'm6' , 1.2  , 560 , 430 , 280 , 'black')
+#bmw.start_engine()
+
+#bmw = Bmw('Bmw' , 'm6' , 1.2  , 560 , 430 , 280 , 'black')
+#bmw.engine_stop()
+#bmw.info()
+#
+#"""
+#Разделение классов :
+#"""
+#
+#class Mercedec ():
+#  def __init__(self , title , model , weight , hp , nm , max_speed , color ):
+#    self.title = title 
+#    self.model = model 
+##    self.weight = weight 
+#    self.hp = hp 
+#    self.nm = nm 
+#    self.max_speed = max_speed 
+#    self.color = color
+#
+#  def start_engine(self):
+#    print (f'{self.title}  {self.model} engine started !')
+#
+#  def engine_stop(self):
+#    print (f'{self.title} {self.model} engine stopped ! ')
+#
+#  def info (self):
+#     print (f"""
+#     {self.title} title 
+#     {self.model} model
+#     {self.weight} weight
+#     {self.hp} hp
+#     {self.nm} nm
+#     {self.max_speed} max_speed 
+#     {self.color} color
+#     """)
+#
+#
+#merc = Mercedec( 'Mercedec' , 'cls' , 1.0  , 760 , 530 , 290 , 'monohrome')
+#merc.start_engine()
+#
+#merc = Mercedec ('Mercedec' , 'cls' , 1.0  , 760 , 530 , 290 , 'monohrome')
+#merc.engine_stop()
+#merc.info()
+ 
+
+
+#class Jack ():
+#  def __init__(self , name , age ,  height):
+#    self.name = name 
+#    self.age = age 
+#    self.height = height
+#
+#  def hello(self):
+#    print(f'hello my name is {self.name} , my {self.age} age')
+#
+#name = Jack('jack' , 15 , 1.67 )
+#name.hello()
+
+
+
+
+#class Transport():
+#  def __init__(self , title , model , color ):
+#    self.title = title 
+#    self.model = model 
+#    self.color = color
+#
+#  def start_engine(self):
+#    print(f'engine on  {self.title}  {self.model} started ')
+#
+#  def engine_stopped(self):
+##    print(f'engine {self.model} {self.title} stopped ')
+#
+#
+#class Car(Transport):
+#  def __init__(self, title, model, color , speed):
+#      super().__init__(title, model, color)
+#      self.speed = speed 
+#  def info(self):
+#    print(f"{self.speed} 'speed' ")
+#
+#
+#class Airplane(Transport):
+ # def __init__(self, title, model, color , speed ,  weight):
+#      super().__init__(title, model, color)
+#      self.weight = weight
+#      self.speed = speed 
+#
+#class DeliveryAirplane(Airplane):
+#  def __init__(self, title , model , color , speed , weight , amount):
+#    super().__init__( title , model , color , speed , weight)
+#    self.amount = amount
+#
+#    
+#
+#merc = Car( 'Mercedec' , 'cls  6.3', 'white' , 320)
+#merc.start_engine()
+#merc.engine_stopped()
+#
+#boeyng = Airplane('Boeyng' , 'w235' , 'white' , 8000  , 900)
+#boeyng.start_engine()
+
+
+
+
+
+
+#class Transport():
+#  def __init__(self , title , model , color ):
+#    self.title = title 
+#    self.model = model 
+#    self.color = color
+#
+#  def start_engine(self):
+#   print(f'engine on  {self.title}  {self.model} started ')
+#
+# def engine_stopped(self):
+#    print(f'engine {self.model} {self.title} stopped ')
+#
+#
+#class Car(Transport):
+#
+#  _curent_speed = 0
+#  _is_started = False
+#
+#  def __init__(self, title, model, color , speed , max_speed):
+#      super().__init__(title, model, color)
+#      self.speed = speed 
+#      self.max_speed = max_speed 
+#  
+#
+#  def _get_curent_speed (self):
+#    print(self._curent_speed)
+#
+#
+#  def _get_is_started (self):
+#    if not (self._is_started):
+#      print('start engine')
+#      return False
+#    else:
+#      return True
+#
+#
+#  def start_engine(self):
+#    self._is_started = True
+#    print(f'{self.title} engine stardet {self.model}' )
+#
+#
+#  def gas (self):
+#    started = self._get_curent_speed()
+#
+#   if self._curent_speed + self.speed <= self.max_speed and started:
+#      self._curent_speed += self.speed
+#      self._get_curent_speed()
+#    else:
+#      print('sorry , CHECK!')
+#
+#
+#  def break_ (self):
+#    started = self._get_curent_speed()
+#
+#    if self._curent_speed >= self.speed and started:
+#      self._curent_speed -= self.speed
+#      self._get_curent_speed()
+#    else:
+#      print()
+#
+#
+#bmw = Car ('Bmw' , 'm5 ' , 'black'  , 50 , 550)
+#bmw.
+
+
+
+
+
+#class Person():
+#  def __init__(self , first_name , last_name):
+#    self.first_name = first_name
+#    self.last_name = last_name
+#
+#class Jack(Person):
+#  def __init__(self, first_name, last_name , phone_number , balance):
+#      super().__init__(first_name, last_name)
+#      self.phone_number = phone_number
+#      self.balance = balance
+#
+#name = Jack(' jack' , 'melly' , 6555656464 , 450)
+#      
+#
+#
+#class Vito(Jack):
+#  _n_number = 22
+#
+# def __init__(self, first_name, last_name, phone_number, balance):
+#      super().__init__(first_name, last_name, phone_number, balance)
+#
+# def minus (self):
+#    a = self.balance - self._n_number 
+#    m = self.balance + a
+#    print(m)
+#  = Vito( 'VIto' , 'shon' , 455298533 , 50)
+# vito.minus(vito)
+
+
+
+
+
+##class Num ():
+#  def __init__(self , num ):
+#    self.num = num
+#
+#  def _get_num(self):
+#    print(self.num)
+#
+#  def __add__(self , other):
+#    print('is dunder method __add__ ')
+#    self.num += other
+#    self._get_num()
+#  
+#  def __sub__ (self , other):
+#    print("i's method __sub__ ")
+##    self._get_num()
+#
+##    print("i's method dunder __mul__")
+#    self.num *= other
+#    self._get_num()
+#
+#  def __floordiv__(self , other):
+#    print("i's dunder method __floordiv")
+#    self.num //= other
+#    self._get_num
+#
+#  def __truediv__(self  ,other):
+#    print("i's dunder mr=ethod __truediv")
+#    self.num /= other 
+#    self._get_num
+#
+#
+#num = Num(65)
+#num + 5
+#
+#
+#class Num2():
+#  def __init__(self , num):
+#    self.num =num
+#
+#  def __add__(self , other):
+#    print("i's dunder method __add__")
+#    self.num += other
+#    
+#num2 = Num2(10)
+#num / 10
+#
+#class Num3(Num):
+#  pass
+#
+#num3 = Num3(10)
+#num3 + 5
+
+
+
+
+
+
+class Builder():
+  def build(self):
+    print('build')
+
+class Doctor ():
+  def help(self):
+    print('help')
+
+class Programmers ():
+  
+  def build (self):
+    print( 'build programm')
+
+  def programming(self):
+    print('programming')
+
+class People(Builder , Doctor , Programmers):
+  pass
+
+jack = People()
+jack.build()
+jack.help()
+jack.programming()
