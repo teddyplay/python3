@@ -1008,26 +1008,52 @@
 
 
 
-class Builder():
-  def build(self):
-    print('build')
+#class Builder():
+#  def build(self):
+#    print('build')
+#
+#class Doctor ():
+#  def help(self):
+#    print('help')
+#
+#class Programmers ():
+#  
+#  def build (self):
+#    print( 'build programm')
+#
+#  def programming(self):
+#    print('programming')
+#
+#class People(Builder , Doctor , Programmers):
+#  pass
+#
+#jack = People()
+#jack.build()
+#jack.help()
+#jack.programming()
 
-class Doctor ():
-  def help(self):
-    print('help')
 
-class Programmers ():
-  
-  def build (self):
-    print( 'build programm')
 
-  def programming(self):
-    print('programming')
 
-class People(Builder , Doctor , Programmers):
-  pass
 
-jack = People()
-jack.build()
-jack.help()
-jack.programming()
+
+#class Name():
+#  def __init__(self , name , age , color ):
+#    self.name = name
+#    self.age = age 
+#   self.color = color 
+#  
+#  def my_name(self):
+#    print(f"hello my name is {self.name} , me a {self.age} age , and I {self.color}")
+#
+#
+#name =  Name( 'alex' , 17 , 'white')
+#name.my_name()
+
+
+
+motorcycles = ['honda', 'yamaha', 'suzuki'] 
+print(motorcycles)
+p_m = motorcycles.pop()
+print(motorcycles)
+print(p_m)
