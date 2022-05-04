@@ -1052,8 +1052,62 @@
 
 
 
-motorcycles = ['honda', 'yamaha', 'suzuki'] 
-print(motorcycles)
-p_m = motorcycles.pop()
-print(motorcycles)
-print(p_m)
+
+
+#import sqlite3
+#connection = sqlite3.connect('db.sqlite3')
+#cursor = connection.cursor()
+
+"""
+create
+
+"""
+
+#cursor.execute("""
+#CREATE TABLE  directions (id INT NOT NULL PRIMARY KEY , title CHAR )""")
+
+
+#cursor.execute("""
+#CREATE TABLE groups (
+#id INT NOT NULL PRIMARY KEY , 
+#number INT , 
+#FOREIGN KEY (direction_id) REFERENCES direction (id )
+#)
+#""")
+
+
+#cursor.execute("""
+#CREATE TABLE peoples (
+#  id INT NOT NULL PRIMARY KEY , 
+#  first_name CHAR 
+#  last_name CHAR 
+#  group_id INT , 
+ # FIREIGN KEY (group-id) REFERENCES group(id)
+#)
+#""")
+
+
+
+#cursor.execute("""
+#INSERT INTO directions VALUES (1 , 'Python')
+#""")
+
+#cursor.close()
+#connection.commit()
+
+
+
+
+from datetime import datetime
+import bisect
+tdays = [19,49,80,110,141,173,204,
+          235,256,296,327,356,366]
+zod =["Capricorn","Aquarius","Pisces","Aries",
+    "Taurus","Gemini","Crayfish","Leo",
+        "Virgo","Libra","Scorpio",
+        "Sagittarius","Capricorn"]
+d = (int(input( 'введите первое значение ')))
+m = (int(input('введите значение ')))
+print(zod[bisect.bisect_left
+         (tdays,(datetime(2020, m, d) - 
+                 datetime(2019,12,31)).days)])
