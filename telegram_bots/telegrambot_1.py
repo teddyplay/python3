@@ -82,7 +82,7 @@ async def echo(message: types.Message):
     #     await bot.send_message(message.from_user.id, "its int")
     # else:
     if c == 1:
-        await bot.send_message(message.from_user.id, f"{x**x}")
+        await bot.send_message(message.from_user.id, f"{x*x}")
     elif c == 0:
         await bot.send_message(message.from_user.id,x)
 
